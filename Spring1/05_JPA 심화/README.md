@@ -45,16 +45,25 @@
 <br>
 <br>
 
+##### H2 실행화면
+![image](https://user-images.githubusercontent.com/74857364/140805230-2e7dbb74-a456-498e-83c5-8d2c785f51e0.png)
+
+<br>
+<br>
+
 ---
 
-#### jpa 로그 보기 좋기 보기
+<br>
 
-`application.properties` 에 아래 코드를 입력하고 다시 실행해보면 
-로그에 찍히는 쿼리 예쁘게 들여쓰기 해주는 코드이다.
+#### jpa 로그 보기 좋기 보기
+<br>
+
+`application.properties` 에 아래 코드를 입력하고 다시 실행해보면 로그에 찍히는 쿼리 예쁘게 들여쓰기 해주는 코드이다.
 
 ```
 spring.jpa.properties.hibernate.format_sql=true
 ```
+<br>
 
 <img src = https://user-images.githubusercontent.com/74857364/140802391-f17118b3-3d49-48ff-9a5e-e19389b744ef.png width="50%">
 
@@ -70,6 +79,8 @@ spring.jpa.properties.hibernate.format_sql=true
 ```
 logging.level.org.hibernate.type.descriptor.sql=trace
 ```
+<br>
+
 <img src = https://user-images.githubusercontent.com/74857364/140803551-53770ad5-64bb-48cb-be87-2032809cd63a.png width="50%">
 
 <br>
@@ -81,5 +92,24 @@ logging.level.org.hibernate.type.descriptor.sql=trace
 spring.jpa.properties.hibernate.format_sql=true
 logging.level.org.hibernate.type.descriptor.sql=trace
 ```
+<br>
+
 <img src = https://user-images.githubusercontent.com/74857364/140803978-1b8341a9-9e8e-4daa-99e4-b9b0ded61eb1.png width="50%">
+
+<br>
+<br>
+<br>
+
+---
+
+
+#### 로그 분석하기
+
+<br>
+
+![image](https://user-images.githubusercontent.com/74857364/140805643-f34c1f08-3d48-4343-95fc-5abd7e58534e.png)
+
+맨 마지막 코드를 보면         
+`2021-11-09 03:16:50.519 TRACE 43036 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]`
+라고 나와있다.            
 
