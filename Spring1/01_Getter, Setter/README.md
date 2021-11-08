@@ -8,6 +8,7 @@
 #### Getter / Setter
 정보를 가져오는 메소드를 Getter, 정보를 바꾸는 메소드를 Setter 라고 부른다.
 
+<br>
 
 ##### 실습
 Getter, Setter 만들기 & Getter, Setter 사용하기
