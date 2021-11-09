@@ -1,4 +1,4 @@
-package com.sparta.naverapi.likeproduct;
+package com.sparta.naverapi.Dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

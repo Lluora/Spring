@@ -1,4 +1,4 @@
-package com.sparta.naverapi.Naver;
+package com.sparta.naverapi.Dto;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

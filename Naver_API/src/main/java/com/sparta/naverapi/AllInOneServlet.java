@@ -1,9 +1,12 @@
-package com.sparta.naverapi.likeproduct;
+package com.sparta.naverapi;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import com.sparta.naverapi.Domain.Product;
+import com.sparta.naverapi.Dto.ProductMypriceRequestDto;
+import com.sparta.naverapi.Dto.ProductRequestDto;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;

@@ -1,6 +1,4 @@
-package com.sparta.naverapi.Repository;
-
-import com.sparta.naverapi.likeproduct.Product;
+package com.sparta.naverapi.Domain;
 
 import java.sql.*;
 import java.time.LocalDateTime;

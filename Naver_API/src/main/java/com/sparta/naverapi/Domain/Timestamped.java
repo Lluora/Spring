@@ -1,4 +1,4 @@
-package com.sparta.naverapi.likeproduct;
+package com.sparta.naverapi.Domain;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,8 +1,8 @@
 package com.sparta.naverapi.Controller;
 
-import com.sparta.naverapi.likeproduct.Product;
-import com.sparta.naverapi.likeproduct.ProductMypriceRequestDto;
-import com.sparta.naverapi.likeproduct.ProductRequestDto;
+import com.sparta.naverapi.Domain.Product;
+import com.sparta.naverapi.Dto.ProductMypriceRequestDto;
+import com.sparta.naverapi.Dto.ProductRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import java.sql.*;

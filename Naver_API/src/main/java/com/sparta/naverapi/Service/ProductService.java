@@ -1,14 +1,16 @@
 package com.sparta.naverapi.Service;
 
-import com.sparta.naverapi.Repository.ProductRepository;
-import com.sparta.naverapi.likeproduct.Product;
-import com.sparta.naverapi.likeproduct.ProductMypriceRequestDto;
-import com.sparta.naverapi.likeproduct.ProductRequestDto;
+import com.sparta.naverapi.Domain.ProductRepository;
+import com.sparta.naverapi.Domain.Product;
+import com.sparta.naverapi.Dto.ProductMypriceRequestDto;
+import com.sparta.naverapi.Dto.ProductRequestDto;
 
 import java.sql.SQLException;
 import java.util.List;
 
 public class ProductService {
+
+
 
     public List<Product> getProducts() throws SQLException {
         ProductRepository productRepository = new ProductRepository();
