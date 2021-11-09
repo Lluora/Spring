@@ -45,9 +45,8 @@ spring.jpa.show-sql=true
  SELECT * FROM lecture;
 ```
 
+<br>
+<br>
 
-
-
-
-
+다음 페이지 >> [04_상속](https://github.com/Lluora/Spring/tree/main/Spring1/04_%EC%83%81%EC%86%8D)
 
