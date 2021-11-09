@@ -56,5 +56,5 @@ A에 대해 생성(POST)/조회(GET)/수정(PUT)/삭제(DELETE) 요청을 하는
 <br>
 <br>
 
-다음 페이지 [08_API_POST&PUT](https://github.com/Lluora/Spring/tree/main/Spring1/08_API_POST%26PUT)
+다음 페이지 >> [08_API_POST&PUT](https://github.com/Lluora/Spring/tree/main/Spring1/08_API_POST%26PUT)
 
