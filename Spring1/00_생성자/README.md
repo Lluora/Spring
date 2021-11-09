@@ -17,3 +17,8 @@
 ### 생성자
 
 "클래스명과 똑같은 이름을 가진 메소드를 **생성자**라고 부른다.
+
+<br>
+<br>
+
+다음 페이지 >> [01_Getter, Setter](https://github.com/Lluora/Spring/tree/main/Spring1/01_Getter%2C%20Setter)
