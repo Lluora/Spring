@@ -12,3 +12,10 @@
 
 ##### 실습
 Getter, Setter 만들기 & Getter, Setter 사용하기
+
+<br>
+<br>
+
+다음 페이지 >> [02_Quiz](https://github.com/Lluora/Spring/tree/main/Spring1/02_Quiz)
+
+다음 페이지 >> [03_JPA](https://github.com/Lluora/Spring/tree/main/Spring1/03_JPA)
