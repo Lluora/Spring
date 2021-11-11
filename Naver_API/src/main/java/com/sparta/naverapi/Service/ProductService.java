@@ -1,12 +1,14 @@
 package com.sparta.naverapi.Service;
 
-import com.sparta.naverapi.Domain.ProductRepository;
-import com.sparta.naverapi.Domain.Product;
+import com.sparta.naverapi.repository.ProductRepository;
+import com.sparta.naverapi.model.Product;
 import com.sparta.naverapi.Dto.ProductMypriceRequestDto;
 import com.sparta.naverapi.Dto.ProductRequestDto;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.sql.SQLException;
+import javax.transaction.Transactional;
+
+
 import java.util.List;
 
 public class ProductService {
@@ -21,27 +23,30 @@ public class ProductService {
     }
 
 
-    public List<Product> getProducts() throws SQLException {
+    public List<Product> getProducts()  {
         //ProductRepository productRepository = new ProductRepository(); //중복제거
-        return productRepository.getProducts();
+        return productRepository.findAll(); //멤버 변수 사용
     }
 
-    public Product createProduct(ProductRequestDto requestDto) throws SQLException {
+    @Transactional // 메소드 동작이 SQL 쿼리문임을 선언합니다.
+    public Product createProduct(ProductRequestDto requestDto)  {
         //ProductRepository productRepository = new ProductRepository(); //중복제거
         // 요청받은 DTO 로 DB에 저장할 객체 만들기
         Product product = new Product(requestDto);
-        productRepository.createProduct(product);
+        productRepository.save(product);
         return product;
     }
 
-    public Product updateProduct(Long id, ProductMypriceRequestDto requestDto) throws SQLException {
+    @Transactional // 메소드 동작이 SQL 쿼리문임을 선언합니다.
+    public Product updateProduct(Long id, ProductMypriceRequestDto requestDto)  {
         //ProductRepository productRepository = new ProductRepository(); //중복제거
-        Product product = productRepository.getProduct(id);
-        if (product == null) {
-            throw new NullPointerException("해당 아이디가 존재하지 않습니다.");
-        }
+        Product product = productRepository.findById(id).orElseThrow(
+                () -> new NullPointerException("해당 아이디가 존재하지 않습니다.")
+        );
+
         int myPrice = requestDto.getMyprice();
-        productRepository.updateProductMyPrice(id, myPrice);
+
+        product.updateMyPrice(myPrice);
         return product;
     }
 }

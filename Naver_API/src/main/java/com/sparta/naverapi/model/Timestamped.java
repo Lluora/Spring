@@ -1,4 +1,4 @@
-package com.sparta.naverapi.Domain;
+package com.sparta.naverapi.model;
 
 import lombok.Getter;
 import lombok.Setter;

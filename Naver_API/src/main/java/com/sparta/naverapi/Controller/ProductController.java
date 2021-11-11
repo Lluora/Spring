@@ -1,7 +1,7 @@
 package com.sparta.naverapi.Controller;
 
 import com.sparta.naverapi.Service.ProductService;
-import com.sparta.naverapi.Domain.Product;
+import com.sparta.naverapi.model.Product;
 import com.sparta.naverapi.Dto.ProductMypriceRequestDto;
 import com.sparta.naverapi.Dto.ProductRequestDto;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,8 +9,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.sql.SQLException;
 import java.util.List;
-
-import lombok.RequiredArgsConstructor; // 중복 삭제
 
 @RestController // JSON으로 데이터를 주고받음을 선언합니다.
 public class ProductController {

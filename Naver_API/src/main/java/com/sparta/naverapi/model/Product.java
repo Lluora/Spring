@@ -1,4 +1,4 @@
-package com.sparta.naverapi.Domain;
+package com.sparta.naverapi.model;
 
 
 import com.sparta.naverapi.Dto.ProductRequestDto;
@@ -43,4 +43,10 @@ public class Product extends Timestamped {
         this.lprice = requestDto.getLprice();
         this.myprice = 0;
     }
+
+
+    public void updateMyPrice(int myprice) {
+        this.myprice = myprice;
+    }
+
 }

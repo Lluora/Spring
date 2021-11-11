@@ -1,7 +1,7 @@
 package com.sparta.naverapi.Controller;
 
 import com.sparta.naverapi.Dto.ItemDto;
-import com.sparta.naverapi.NaverShopSearch;
+import com.sparta.naverapi.utils.NaverShopSearch;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
