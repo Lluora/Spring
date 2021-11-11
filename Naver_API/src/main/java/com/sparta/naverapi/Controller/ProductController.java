@@ -4,6 +4,7 @@ import com.sparta.naverapi.Service.ProductService;
 import com.sparta.naverapi.Domain.Product;
 import com.sparta.naverapi.Dto.ProductMypriceRequestDto;
 import com.sparta.naverapi.Dto.ProductRequestDto;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.sql.SQLException;
@@ -17,9 +18,10 @@ public class ProductController {
     // 멤버 변수 선언
     private final ProductService productService;
 
-    public ProductController() {
+    @Autowired
+    public ProductController(ProductService productService) {
         // 멤버 변수 생성
-        productService = new ProductService();
+        this.productService = productService;
     }
 
 

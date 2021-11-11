@@ -6,6 +6,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProductRepository {
+    //스프링 IoC 컨테이너 사용하기
+    private String dbId;
+    private String dbPassword;
+    private String dbUrl;
+    // 생성자
+    public ProductRepository(String dbId, String dbPassword, String dbUrl) {
+        this.dbId = dbId;
+        this.dbPassword = dbPassword;
+        this.dbUrl = dbUrl;
+    }
+
+
     public Product getProduct(Long id) throws SQLException {
         Product product = new Product();
 
