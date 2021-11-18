@@ -21,7 +21,7 @@ public class Week02Application {
         SpringApplication.run(Week02Application.class, args);
     }
 
-    // delete
+
     @Bean
     public CommandLineRunner demo(CourseRepository courseRepository, CourseService courseService) {
         return (args) -> {
@@ -36,7 +36,7 @@ public class Week02Application {
                 System.out.println(course.getTutor());
             }
 
-            Course new_course = new Course("웹개발의 봄, Spring", "임민영");
+
             CourseRequestDto requestDto = new CourseRequestDto("웹개발의 봄, Spring", "임민영");
             courseService.update(1L, requestDto);
             courseList = courseRepository.findAll();
@@ -46,11 +46,7 @@ public class Week02Application {
                 System.out.println(course.getTitle());
                 System.out.println(course.getTutor());
             }
-
-            courseRepository.deleteAll();
         };
     }
-
-
 };
 

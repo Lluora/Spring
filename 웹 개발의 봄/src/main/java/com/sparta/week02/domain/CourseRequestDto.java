@@ -11,5 +11,4 @@ import lombok.Setter;
 public class CourseRequestDto { //Course가 2개 가지고 있으므로 멤버면수 2개
     private final String title;
     private final String tutor;
-
 }

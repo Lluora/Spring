@@ -20,6 +20,12 @@ public class Course extends Timestamped {
     @Column(nullable = false)
     private String tutor;
 
+    //Course 클래서 생성자 추가
+    public Course(CourseRequestDto requestDto) {
+        this.title = requestDto.getTitle();
+        this.tutor = requestDto.getTutor();
+    }
+
 
     public Course(String title, String tutor) {
         this.title = title;
